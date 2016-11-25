@@ -1,6 +1,6 @@
-<h1>Datetime comonent test</h1>
+<h1>Datetime component test</h1>
 <div>
-    <p> Preng date picker</p>
+    <p> Primeeng date picker</p>
 </div>
 <div>
     <p-calendar [(ngModel)]="value" showTime="showTime" hourFormat="24" [showIcon]="true" dateFormat="dd/mm/yy"></p-calendar>
@@ -9,7 +9,7 @@
 <hr>
 <p> bootstrap ng date picker + time picker</p>
 <div class="form-group row">
-    <div class="col-lg-6">
+    <div class="col-lg-3">
         <div class="input-group">
             <input class="form-control" placeholder="dd/mm/yyyy" name="dp" [(ngModel)]="date" ngbDatepicker #d="ngbDatepicker">
             <div class="input-group-addon" (click)="d.toggle()">
@@ -19,8 +19,9 @@
     </div>
     <div class="col-lg-6">
      <div class="input-group">
-        <span class="input-group-addon"><i class="fa fa-fw fa-clock-o"></i></span>
-        <ngb-timepicker [(ngModel)]="time" [spinners]="off"></ngb-timepicker>
+         <ngb-timepicker [(ngModel)]="time" [spinners]="off"></ngb-timepicker>
+         <span class="input-group-addon"><i class="fa fa-fw fa-clock-o"></i></span>
+
     </div>
     </div>
 </div>
